@@ -1,0 +1,42 @@
+/* 全局基础样式 - App 适配 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CSS 变量 */
+:root {
+  --warm-orange: #E07B4C;
+  --warm-cream: #FFF8F0;
+  --warm-caramel: #8B6B5A;
+  --warm-peach: #FFD4B8;
+  --warm-yellow: #FFECD2;
+}
+
+/* 安全区适配（iPhone 刘海屏） */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .bottom-nav {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

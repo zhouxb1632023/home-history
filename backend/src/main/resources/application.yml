@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    open-in-view: false
+
+app:
+  jwt:
+    secret: home-history-jwt-secret-key-change-in-production-256bit
+    expiration-ms: 86400000
+  storage:
+    path: ./storage
+  thumbnail:
+    width: 400

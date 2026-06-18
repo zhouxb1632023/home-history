@@ -1,0 +1,53 @@
+﻿{
+  "name": "家庭相册",
+  "version": "1.0.0",
+  "description": "家庭相册 App",
+  "appID": "H5xxxxxxxx",
+  "appVersion": "1.0.0",
+  "launch_path": "./index.html",
+  "developer": {
+    "name": "",
+    "email": ""
+  },
+  "icons": {
+    "72": "icon-192.png",
+    "144": "icon-192.png"
+  },
+  "plus": {
+    "splashscreen": {
+      "waiting": false,
+      "autoclose": true,
+      "delay": 0
+    },
+    "popwin": false,
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "dark",
+      "background": "#E07B4C"
+    },
+    "distribute": {
+      "android": {
+        "permissions": [
+          "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>"
+        ],
+        "minSdkVersion": 21,
+        "targetSdkVersion": 33,
+        "abiFilters": ["armeabi-v7a", "arm64-v8a", "x86_64"]
+      },
+      "ios": {
+        "dSYMs": false,
+        "urltypes": [],
+        "supportedInterfaceOrientations": ["UIInterfaceOrientationPortrait"]
+      },
+      "sdkConfigs": {},
+      "splashscreen": {
+        "icon": ""
+      }
+    }
+  }
+}
